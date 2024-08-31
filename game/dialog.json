@@ -1,0 +1,25 @@
+[
+{"Name": "NPC",
+"Message":" I saw you wandering in this forest and decided to follow you."
+},
+{"Name": "NPC",
+"Message":"As I saw you getting lost I decided that I will guide you through this journey. "
+},
+{"Name":"NPC",
+"Message":"before anything else you must accomplish your every quest you will encounter.?"
+
+},
+{"Name": "ELY",
+"Message":"Will I find my way home after I finish the quest?"
+},
+{"Name": "NPC",
+"Message":"We will find out. You must finish your quest first. Are you ready?"
+},
+{"Name": "ELY",
+"Message":"Yes, Let's Start!"
+},
+{"Name": "NPC",
+"Message":" Let's begin!"
+}
+
+]

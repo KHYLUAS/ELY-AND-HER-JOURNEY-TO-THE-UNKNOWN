@@ -1,0 +1,79 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://soil.tscn" type="PackedScene" id=1]
+[ext_resource path="res://background 1.png" type="Texture" id=2]
+[ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=3]
+[ext_resource path="res://portal.tscn" type="PackedScene" id=4]
+[ext_resource path="res://npc.tscn" type="PackedScene" id=7]
+[ext_resource path="res://dialog.tscn" type="PackedScene" id=8]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 26.1525, 268.251 )
+
+[node name="main" type="Node2D"]
+
+[node name="Sprite6" type="Sprite" parent="."]
+position = Vector2( 5349.59, 342.449 )
+scale = Vector2( 0.981687, 0.952934 )
+texture = ExtResource( 2 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+position = Vector2( 4453.6, 342.432 )
+scale = Vector2( 0.981687, 0.952934 )
+texture = ExtResource( 2 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( 3538, 342.902 )
+scale = Vector2( 0.981687, 0.952934 )
+texture = ExtResource( 2 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 2655.13, 326.848 )
+scale = Vector2( 0.981687, 0.952934 )
+texture = ExtResource( 2 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 1768.87, 331.294 )
+scale = Vector2( 0.981687, 0.952934 )
+texture = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 880.132, 334.795 )
+scale = Vector2( 0.981687, 0.952934 )
+texture = ExtResource( 2 )
+
+[node name="StaticBody2D5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 5997.4, 598.06 )
+
+[node name="StaticBody2D4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 4386.31, 598.32 )
+
+[node name="StaticBody2D3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2607.91, 599.424 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 883.556, 601.803 )
+
+[node name="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 5876, 430.495 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 111.572, 574.551 )
+
+[node name="Camera2D2" type="Camera2D" parent="KinematicBody2D"]
+current = true
+limit_left = 0
+limit_top = 0
+limit_right = 4000
+limit_bottom = 0
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( -45.5012, 464.364 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D6" parent="." instance=ExtResource( 7 )]
+position = Vector2( 916.833, 499 )
+
+[node name="CanvasLayer" parent="StaticBody2D6" instance=ExtResource( 8 )]

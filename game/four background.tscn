@@ -1,0 +1,217 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://background 4 flip3.png" type="Texture" id=1]
+[ext_resource path="res://background 4.png" type="Texture" id=2]
+[ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ground cemetery .png" type="Texture" id=4]
+[ext_resource path="res://portal 4.tscn" type="PackedScene" id=5]
+[ext_resource path="res://poison.tscn" type="PackedScene" id=6]
+[ext_resource path="res://box2.tscn" type="PackedScene" id=7]
+[ext_resource path="res://heart.tscn" type="PackedScene" id=8]
+[ext_resource path="res://coin.tscn" type="PackedScene" id=9]
+[ext_resource path="res://lifebars.tscn" type="PackedScene" id=10]
+[ext_resource path="res://golem1.tscn" type="PackedScene" id=11]
+[ext_resource path="res://bone1.tscn" type="PackedScene" id=12]
+[ext_resource path="res://gameoverportal.tscn" type="PackedScene" id=13]
+[ext_resource path="res://grinder.tscn" type="PackedScene" id=14]
+[ext_resource path="res://golem.tscn" type="PackedScene" id=15]
+[ext_resource path="res://goblin2.1.tscn" type="PackedScene" id=16]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 296, 168, 0, 168, 0, 0, 296, 0 )
+
+[sub_resource type="TileSet" id=2]
+0/name = "ground cemetery .png 0"
+0/texture = ExtResource( 4 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 1, 298, 198 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 1 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 26.1525, 268.251 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite5" type="Sprite" parent="."]
+position = Vector2( 5988.68, 329.076 )
+scale = Vector2( 1.89712, 1.59825 )
+texture = ExtResource( 2 )
+
+[node name="Sprite6" type="Sprite" parent="."]
+position = Vector2( 7296.53, 328.578 )
+scale = Vector2( 1.78858, 1.6013 )
+texture = ExtResource( 1 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( 4617, 328.753 )
+scale = Vector2( 1.78858, 1.6013 )
+texture = ExtResource( 1 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 3290.28, 325.586 )
+scale = Vector2( 1.89712, 1.59825 )
+texture = ExtResource( 2 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 1916.42, 325.611 )
+scale = Vector2( 1.78858, 1.6013 )
+texture = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 622.515, 324.303 )
+scale = Vector2( 1.69627, 1.60122 )
+texture = ExtResource( 2 )
+
+[node name="Area2D4" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1802.69, 596.584 )
+
+[node name="Area2D5" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2697.21, 591.818 )
+
+[node name="Area2D6" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3083.9, 592.917 )
+
+[node name="Area2D19" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4125.65, 597.674 )
+
+[node name="Area2D21" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4601.07, 588.778 )
+
+[node name="Area2D20" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4508.57, 588.16 )
+
+[node name="Area2D23" parent="." instance=ExtResource( 6 )]
+position = Vector2( 5533.01, 587.28 )
+
+[node name="Area2D22" parent="." instance=ExtResource( 6 )]
+position = Vector2( 5465.59, 587.28 )
+
+[node name="Area2D25" parent="." instance=ExtResource( 6 )]
+position = Vector2( 6448.48, 595.27 )
+
+[node name="Area2D24" parent="." instance=ExtResource( 6 )]
+position = Vector2( 6372.07, 594.772 )
+
+[node name="Area2D26" parent="." instance=ExtResource( 6 )]
+position = Vector2( 7314.5, 587.28 )
+
+[node name="Area2D3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1164, 596.302 )
+
+[node name="Area2D27" parent="." instance=ExtResource( 6 )]
+position = Vector2( 7419.38, 586.778 )
+
+[node name="Area2D2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 801.989, 593.801 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 2 )
+format = 1
+tile_data = PoolIntArray( 458765, 0, 0, 458785, 0, 0, 458828, 0, 0, 589823, 0, 0, 524291, 0, 0, 524295, 0, 0, 524307, 0, 0, 524311, 0, 0, 524317, 0, 0, 524325, 0, 0, 524331, 0, 0, 524337, 0, 0, 524341, 0, 0, 524345, 0, 0, 524347, 0, 0, 524353, 0, 0, 524360, 0, 0, 524368, 0, 0, 524375, 0, 0, 524379, 0, 0, 524382, 0, 0, 524389, 0, 0, 524393, 0, 0, 524397, 0, 0, 524404, 0, 0, 524408, 0, 0 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 7 )]
+position = Vector2( 600.238, 500.196 )
+
+[node name="StaticBody2D2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 703.86, 499.936 )
+
+[node name="StaticBody2D3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 703.106, 408.745 )
+
+[node name="StaticBody2D4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1516.98, 495.68 )
+
+[node name="StaticBody2D5" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2469.67, 495.764 )
+
+[node name="StaticBody2D7" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1412.63, 496.468 )
+
+[node name="Area2D7" parent="." instance=ExtResource( 9 )]
+position = Vector2( 464.116, 491.03 )
+
+[node name="Area2D8" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1632.34, 492.758 )
+
+[node name="Area2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 5882.9, 341.571 )
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="."]
+collision_layer = 512
+collision_mask = 512
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D8"]
+position = Vector2( -53.408, 235.52 )
+shape = SubResource( 3 )
+
+[node name="Area2D9" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2606.01, 492.159 )
+
+[node name="Area2D11" parent="." instance=ExtResource( 12 )]
+position = Vector2( 2032.91, 468.403 )
+
+[node name="Area2D12" parent="." instance=ExtResource( 11 )]
+position = Vector2( 2365.84, 378.839 )
+
+[node name="Area2D14" parent="." instance=ExtResource( 11 )]
+position = Vector2( 3895.16, 440.678 )
+
+[node name="Area2D15" parent="." instance=ExtResource( 8 )]
+position = Vector2( 4328.2, 496.396 )
+
+[node name="Area2D16" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2922.1, 498.208 )
+
+[node name="Area2D17" parent="." instance=ExtResource( 9 )]
+position = Vector2( 4976.83, 432.391 )
+
+[node name="Area2D18" parent="." instance=ExtResource( 8 )]
+position = Vector2( 5265.29, 500.893 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 63.9719, 508.266 )
+
+[node name="lifebars" parent="." instance=ExtResource( 10 )]
+
+[node name="Area2D10" parent="." instance=ExtResource( 13 )]
+position = Vector2( 5109.17, 761.737 )
+
+[node name="Area2D28" parent="." instance=ExtResource( 14 )]
+position = Vector2( 2934.02, 319.084 )
+
+[node name="Area2D29" parent="." instance=ExtResource( 14 )]
+position = Vector2( 3707.09, 324.747 )
+
+[node name="coin" parent="." instance=ExtResource( 9 )]
+position = Vector2( 870.195, 404.032 )
+
+[node name="Area2D30" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1075.96, 421.021 )
+
+[node name="coin2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1270.7, 468.215 )
+
+[node name="Area2D31" parent="." instance=ExtResource( 8 )]
+position = Vector2( 3619.97, 470.103 )
+
+[node name="KinematicBody2D3" parent="." instance=ExtResource( 16 )]
+position = Vector2( 3423.75, 485.205 )
+
+[node name="KinematicBody2D2" parent="." instance=ExtResource( 15 )]
+position = Vector2( 484.526, 462.552 )
